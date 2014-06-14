@@ -1,0 +1,6 @@
+# playbook.yml
+---
+- hosts: all
+  roles:
+    - oh-my-zsh
+

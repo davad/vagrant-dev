@@ -1,0 +1,19 @@
+---
+## Install Oh-my-zsh
+- name: Install git and zsh
+  apt: name={{ item }} state=latest update_cache=yes
+  with_items:
+   - git
+   - zsh
+   - git-core
+  sudo: yes
+
+- name: Clone oh-my-zsh repo
+  git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
+
+- name: deploy .zshrc
+  template: src=zshrc.in dest=~/.zshrc
+
+- name: Set zsh as default shell
+  user: name={{ ansible_ssh_user }} shell=/bin/zsh
+  sudo: yes
