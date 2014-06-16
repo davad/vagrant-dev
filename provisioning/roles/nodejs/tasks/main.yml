@@ -1,0 +1,15 @@
+---
+- name: Node.js | Package prerequisites for node.js
+  apt: pkg=python-software-properties state=present
+  sudo: yes
+  tags: nodejs
+
+- name: Install Git PPA for latest nodejs version
+  apt_repository: repo=ppa:chris-lea/node.js state=present
+  sudo: yes
+  tags: nodejs
+
+- name: Install Nodejs package
+  apt: pkg=nodejs state=latest update_cache=yes
+  sudo: yes
+  tags: nodejs
