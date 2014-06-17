@@ -1,0 +1,15 @@
+---
+- name: Install Yeoman
+  sudo: yes
+  npm: name=yo global=yes
+  tags: yeoman
+
+- name: Install Angular.js generator
+  sudo: yes
+  npm: name=generator-angular global=yes
+  tags: yeoman
+
+- name: Install Jekyll generator
+  sudo: yes
+  npm: name=generator-jekyllrb global=yes
+  tags: yeoman

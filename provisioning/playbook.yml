@@ -4,8 +4,10 @@
   roles:
     - janus
     - oh-my-zsh
+    - ruby
     - nodejs
     - grunt
     - bower
     - coffee
+    - yo
 

@@ -1,0 +1,16 @@
+---
+- name: Install Ruby
+  apt: pkg=ruby update-cache=yes
+  sudo: yes
+  tags: ruby
+
+- name: Install compass gem
+  gem: name=compass
+  sudo: yes
+  tags: ruby
+
+- name: Install bundler
+  gem: name=bundle
+  sudo: yes
+  tags: ruby
+
