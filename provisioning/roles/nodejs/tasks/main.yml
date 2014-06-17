@@ -1,5 +1,5 @@
 ---
-- name: Node.js | Package prerequisites for node.js
+- name: Package prerequisites for node.js
   apt: pkg=python-software-properties state=present
   sudo: yes
   tags: nodejs
