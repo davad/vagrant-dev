@@ -1,0 +1,4 @@
+---
+- name: Install
+  apt: pkg=byobu state=installed update_cache=true cache_valid_time=3600
+  sudo: yes
