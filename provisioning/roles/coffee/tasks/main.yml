@@ -1,0 +1,5 @@
+---
+- name: CoffeeScript | Install CoffeeScript
+  sudo: yes
+  npm: name=coffee-script global=yes
+  tags: coffee-script

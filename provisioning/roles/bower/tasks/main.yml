@@ -1,0 +1,5 @@
+---
+- name: Bower | Install Bower
+  sudo: yes
+  npm: name=bower global=yes
+  tags: bower

@@ -1,0 +1,6 @@
+---
+- name: Grunt | Install Grunt
+  sudo: yes
+  npm: name=grunt-cli global=yes
+  tags: grunt-cli
+
