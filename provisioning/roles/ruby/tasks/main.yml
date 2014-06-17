@@ -9,8 +9,8 @@
   sudo: yes
   tags: ruby
 
-- name: Install bundler
-  gem: name=bundle
+- name: Install bundler # Something funky going on here. Bundler isn't installing.
+  gem: name=bundler
   sudo: yes
   tags: ruby
 
