@@ -1,6 +1,11 @@
 ---
 - name: Install Ruby
-  apt: pkg=ruby update-cache=yes
+  apt: pkg=ruby2.0 update-cache=yes
+  sudo: yes
+  tags: ruby
+
+- name: Install Ruby-dev (for building native extensions)
+  apt: pkg=ruby2.0-dev update-cache=yes
   sudo: yes
   tags: ruby
 
