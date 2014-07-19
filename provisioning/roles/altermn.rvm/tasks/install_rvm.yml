@@ -17,5 +17,8 @@
     path: "{{rvm.temp_installer_path}}"
     state: absent
 
+- name: add user {{ ansible_ssh_user }} to rvm group
+  action: user name={{ ansible_ssh_user }} groups=rvm append=yes
+
 - name: setting RVM autolibs on
   command: "{{rvm.root}}/bin/rvm autolibs 3"
