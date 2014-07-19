@@ -11,3 +11,5 @@
 - include: ./select_ruby.yml
 - include: ./install_ruby.yml
   when: rvm_select_ruby_version | failed
+- include: ./select_ruby.yml
+  when: rvm_select_ruby_version | failed
