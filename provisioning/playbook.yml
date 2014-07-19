@@ -5,7 +5,7 @@
     - byobu
     - janus
     - oh-my-zsh
-    - ruby
+    - { role: altermn.rvm, sudo: yes }
     - nodejs
     - grunt
     - bower
