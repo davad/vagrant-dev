@@ -1,12 +1,18 @@
 # playbook.yml
 ---
 - hosts: all
+
+  vars_files:
+  - vars/elasticsearch.yml
+
   roles:
-    - byobu
-    - janus
     - oh-my-zsh
     - { role: altermn.rvm, sudo: yes }
+    - { role: crushlovely.imagemagick }
     - nodejs
+    - { role: gpstathis.elasticsearch, sudo: yes }
+    - janus
+    - byobu
     - grunt
     - bower
     - coffee
